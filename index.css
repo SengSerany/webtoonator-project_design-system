@@ -1,4 +1,18 @@
 /* ---------------------------- */
+/* Custom properties            */
+/* ---------------------------- */
+
+:root {
+  --clr-strong_blue: 188 77% 35%;
+  --clr-light_blue: 179 31% 63%;
+  --clr-brown: 19 9% 46%;
+  --clr-salmon: 11 55% 79%;
+  --clr-red: 350 61% 55%;
+  --clr-black: 0 0% 0%;
+  --clr-white: 0 0% 100%;
+}
+
+/* ---------------------------- */
 /* Reset                        */
 /* ---------------------------- */
 
@@ -63,6 +77,8 @@ select {
 /* Utility classes              */
 /* ---------------------------- */
 
+/* --- General --- */
+
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
@@ -89,4 +105,57 @@ select {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+.box {
+  background: lightblue;
+  padding: 3rem;
+}
+
+/* --- Colors --- */
+
+/* Background-color */
+.bg-white {
+  background-color: hsl(var(--clr-white));
+}
+.bg-black {
+  background-color: hsl(var(--clr-black));
+}
+.bg-strong_blue {
+  background-color: hsl(var(--clr-strong_blue));
+}
+.bg-light_blue {
+  background-color: hsl(var(--clr-light_blue));
+}
+.bg-brown {
+  background-color: hsl(var(--clr-brown));
+}
+.bg-salmon {
+  background-color: hsl(var(--clr-salmon));
+}
+.bg-red {
+  background-color: hsl(var(--clr-red));
+}
+
+/* Text-color */
+.text-white {
+  color: hsl(var(--clr-white));
+}
+.text-black {
+  color: hsl(var(--clr-black));
+}
+.text-strong_blue {
+  color: hsl(var(--clr-strong_blue));
+}
+.text-light_blue {
+  color: hsl(var(--clr-light_blue));
+}
+.text-brown {
+  color: hsl(var(--clr-brown));
+}
+.text-salmon {
+  color: hsl(var(--clr-salmon));
+}
+.text-red {
+  color: hsl(var(--clr-red));
 }

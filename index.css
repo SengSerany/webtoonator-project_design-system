@@ -260,3 +260,18 @@ select {
 .fs-600 {
   line-height: 1.1;
 }
+
+/* Specific elements */
+
+.numbered-title {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-600);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.numbered-title span {
+  font-weight: 600;
+  color: hsl(var(--clr-strong_blue));
+  margin-right: 0.5rem;
+}

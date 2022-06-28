@@ -44,6 +44,7 @@ picture {
 body {
   line-height: 1.5;
   min-width: 100vh;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* Make images easier to work with */
@@ -159,3 +160,5 @@ select {
 .text-red {
   color: hsl(var(--clr-red));
 }
+
+/* color utility class */

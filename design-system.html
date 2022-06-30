@@ -908,14 +908,51 @@
 
             <!-- LIST ELEMENT -->
             <div
-              id="tabs"
-              class="container flex-column text-center"
-              style="margin-top: 4rem"
+              id="list"
+              class="container flex-column"
+              style="margin-top: 4rem; padding: 0"
             >
-              <p class="fw-semi_bold" style="margin-bottom: 1rem">List</p>
+              <p class="fw-semi_bold text-center" style="margin-bottom: 1rem">
+                List
+              </p>
+
+              <!-- Begining list elements-->
+              <div class="flex">
+                <ul
+                  class="list"
+                  style="
+                    --clr-list_current_custom: var(--clr-black);
+                    --clr-list_span_custom: var(--clr-strong_blue);
+                    --clr-list_hover_custom: var(--clr-red);
+                    --clr-list_shadow_hover_custom: var(--clr-strong_blue);
+                    --fw-list_span_custom: 600;
+                  "
+                >
+                  <li class="uppercase ff-primary">
+                    <a href="#">
+                      <span><i class="fa-solid fa-circle"></i> Juin 2022</span>
+                      - début de la Promotion
+                    </a>
+                  </li>
+                  <li class="uppercase ff-primary">
+                    <a href="#">
+                      <span
+                        ><i class="fa-solid fa-circle"></i> Septembre 2022</span
+                      >
+                      - financement ulule
+                    </a>
+                  </li>
+                  <li class="uppercase ff-primary">
+                    <a href="#"
+                      ><span><i class="fa-solid fa-circle"></i> juin 2023</span>
+                      - lancement du site
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Ending list elements (basic color / blue) -->
             </div>
             <!-- LIST ELEMENT -->
-            <div id="list"></div>
           </div>
         </div>
       </section>

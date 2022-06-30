@@ -440,11 +440,6 @@ path.two {
   color: hsl(var(--clr-strong_blue));
 }
 
-#menu nav i::after:hover,
-#menu nav i::after:focus {
-  text-shadow: -4px 4px 0px hsl(var(--clr-red) / 1);
-}
-
 #menu ul {
   padding-inline-start: 0;
 }
@@ -485,28 +480,33 @@ path.two {
 .tabs.secondary button:hover:not(.active-tabs),
 .tabs.secondary button:focus:not(.active-tabs) {
   background-color: hsl(var(--clr-salmon));
+  text-shadow: -2px 2px 0px hsl(var(--clr-red));
 }
 
 .tabs.tertiary button:hover:not(.active-tabs),
 .tabs.tertiary button:focus:not(.active-tabs) {
   background-color: hsl(var(--clr-brown) / 0.5);
+  text-shadow: -2px 2px 0px hsl(var(--clr-brown));
 }
 
 .tabs.dark button:hover:not(.active-tabs),
 .tabs.dark button:focus:not(.active-tabs) {
   background-color: hsl(var(--clr-black) / 0.5);
+  text-shadow: -2px 2px 0px hsl(var(--clr-black));
 }
 
 .tabs.light button:hover:not(.active-tabs),
 .tabs.light button:focus:not(.active-tabs) {
   color: var(--clr-black);
   background-color: hsl(var(--clr-white) / 0.5);
+  text-shadow: -1.5px 1.5px 0px hsl(var(--clr-white) / 0.75);
 }
 
 .tabs.primary button:hover:not(.active-tabs),
 .tabs.primary button:focus:not(.active-tabs) {
   color: hsl(var(--clr-white));
   background-color: hsl(var(--clr-light_blue));
+  text-shadow: -2px 2px 0px hsl(var(--clr-strong_blue));
 }
 
 .tabs button.active-tabs {
@@ -515,23 +515,28 @@ path.two {
 
 .tabs.primary button.active-tabs {
   background-color: hsl(var(--clr-strong_blue));
+  text-shadow: -2px 2px 0px hsl(var(--clr-black) / 0.5);
 }
 
 .tabs.secondary button.active-tabs {
   background-color: hsl(var(--clr-red));
+  text-shadow: -2px 2px 0px hsl(var(--clr-black) / 0.5);
 }
 
 .tabs.tertiary button.active-tabs {
   background-color: hsl(var(--clr-brown));
+  text-shadow: -2px 2px 0px hsl(var(--clr-black) / 0.5);
 }
 
 .tabs.dark button.active-tabs {
   background-color: hsl(var(--clr-black));
+  text-shadow: -2px 2px 0px hsl(var(--clr-white) / 0.25);
 }
 
 .tabs.light button.active-tabs {
   color: hsl(var(--clr-black));
   background-color: hsl(var(--clr-white));
+  text-shadow: -1px 1px 0px hsl(var(--clr-black) / 0.25);
 }
 /* Ending tabs elements */
 
@@ -608,3 +613,43 @@ path.two {
   box-shadow: -4px 4px 0px hsl(var(--clr-white) / 0.65);
 }
 /* Ending dots elements */
+
+/* Begining list elements */
+ul.list {
+  padding-inline-start: 0;
+  --clr-list_hover_custom: hsl(--clr-red);
+  list-style: none;
+}
+
+ul.list a {
+  text-decoration: none;
+  color: hsl(var(--clr-list_current_custom, --clr-black));
+  transition: all 0.2s ease-in-out;
+}
+
+ul.list a span {
+  font-weight: var(--fw-list_span_custom, 600);
+  color: hsl(var(--clr-list_span_custom, --clr-black));
+  transition: all 0.2s ease-in-out;
+}
+
+ul.list a span i {
+  font-size: 50%;
+  padding-right: 1em;
+  vertical-align: middle;
+}
+
+ul.list li a:hover,
+ul.list li a:focus {
+  text-decoration: none;
+  color: hsl(var(--clr-list_hover_custom, --clr-red));
+  font-size: calc(100% + 3px);
+}
+
+ul.list li a:hover span,
+ul.list li a:focus span {
+  color: hsl(var(--clr-list_hover_custom, --clr-red));
+  text-shadow: -1px 1px 0px
+    hsl(var(--clr-list_shadow_hover_custom, --clr-strong_blue) / 0.5);
+}
+/* Ending list elements */

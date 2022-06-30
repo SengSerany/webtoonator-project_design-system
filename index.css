@@ -321,7 +321,7 @@ select {
   padding: var(--pad-top_down, 10px) var(--pad-left_right, 45px);
   text-decoration: none;
   transition: 1s;
-  box-shadow: 6px 6px 0 black;
+  box-shadow: -6px 6px 0 black;
   transform: skewX(-15deg);
 }
 
@@ -331,12 +331,12 @@ select {
 
 .cta.cta-primary:hover {
   transition: 0.5s;
-  box-shadow: 10px 10px 0 hsl(var(--clr-red));
+  box-shadow: -10px 10px 0 hsl(var(--clr-red));
 }
 
 .cta.cta-secondary:hover {
   transition: 0.5s;
-  box-shadow: 10px 10px 0 hsl(var(--clr-strong_blue));
+  box-shadow: -10px 10px 0 hsl(var(--clr-strong_blue));
 }
 
 .cta span:nth-child(1) {
@@ -465,16 +465,11 @@ path.two {
   padding: 1rem 2rem 1rem 1rem;
   -webkit-clip-path: polygon(0 1%, 70% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0 1%, 70% 0%, 100% 100%, 0% 100%);
-  background-color: hsl(var(--clr-white));
-}
-
-.tabs.light button {
-  color: hsl(var(--clr-black));
+  background-color: hsl(var(--clr-white) / 0);
 }
 
 .tabs.light button {
   color: hsl(var(--clr-white));
-  background-color: hsl(var(--clr-black));
 }
 
 .tabs button:not(:first-child),
@@ -538,4 +533,78 @@ path.two {
   color: hsl(var(--clr-black));
   background-color: hsl(var(--clr-white));
 }
-/* Ending tabs elements */ ;
+/* Ending tabs elements */
+
+/* Begening dots elements */
+.dots div {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-light_blue) / 0.5);
+}
+
+.dots.dots-primary div {
+  background-color: hsl(var(--clr-light_blue) / 0.5);
+}
+
+.dots.dots-primary div.active-dots {
+  background-color: hsl(var(--clr-strong_blue));
+  box-shadow: -4px 4px 0px hsl(var(--clr-red) / 1);
+}
+
+.dots.dots-primary div:hover:not(.active-dots) {
+  box-shadow: -4px 4px 0px hsl(var(--clr-salmon) / 1);
+}
+
+.dots.dots-secondary div {
+  background-color: hsl(var(--clr-salmon) / 0.5);
+}
+
+.dots.dots-secondary div.active-dots {
+  background-color: hsl(var(--clr-red));
+  box-shadow: -4px 4px 0px hsl(var(--clr-strong_blue));
+}
+
+.dots.dots-secondary div:hover:not(.active-dots) {
+  box-shadow: -4px 4px 0px hsl(var(--clr-light_blue));
+}
+
+.dots.dots-tertiary div {
+  background-color: hsl(var(--clr-brown) / 0.25);
+}
+
+.dots.dots-tertiary div.active-dots {
+  background-color: hsl(var(--clr-brown));
+  box-shadow: -4px 4px 0px hsl(var(--clr-black));
+}
+
+.dots.dots-tertiary div:hover:not(.active-dots) {
+  box-shadow: -4px 4px 0px hsl(var(--clr-black) / 0.5);
+}
+
+.dots.dots-dark div {
+  background-color: hsl(var(--clr-black) / 0.25);
+}
+
+.dots.dots-dark div.active-dots {
+  background-color: hsl(var(--clr-black));
+  box-shadow: -4px 4px 0px hsl(var(--clr-brown));
+}
+
+.dots.dots-dark div:hover:not(.active-dots) {
+  box-shadow: -4px 4px 0px hsl(var(--clr-brown) / 0.7);
+}
+
+.dots.dots-light div {
+  background-color: hsl(var(--clr-white) / 0.45);
+}
+
+.dots.dots-light div.active-dots {
+  background-color: hsl(var(--clr-white));
+  box-shadow: -4px 4px 0px hsl(var(--clr-white) / 0.75);
+}
+
+.dots.dots-light div:hover:not(.active-dots) {
+  box-shadow: -4px 4px 0px hsl(var(--clr-white) / 0.65);
+}
+/* Ending dots elements */

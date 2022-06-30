@@ -293,7 +293,7 @@
       <!-- //INTERACTIVE ELEMENTS\\ -->
       <section
         id="interactive-elements"
-        style="margin: 4rem 0"
+        style="margin: 4rem 0 0 0"
         class="ff-primary"
       >
         <h2 class="numbered-title"><span>03</span>Interactive elements</h2>
@@ -355,234 +355,88 @@
         <br />
 
         <div class="flex">
-          <div class="flex-column text-center" style="width: 50%">
+          <!-- Colonne 1 -->
+          <div
+            class="justify-content-center text-center"
+            style="width: 50%; margin-right: 1rem"
+          >
             <!-- CALL-TO-ACTION BUTTON ELEMENT -->
             <div
               id="cta-button"
               class="container flex-column justify-content-center flow"
-              style="margin-top: 4rem"
+              style="margin-top: 4rem; margin-inline: 0; padding: 0"
             >
-              <p class="fw-semi_bold">Call to action button</p>
+              <p
+                class="fw-semi_bold"
+                style="
+                  border-bottom: 2px solid hsl(var(--clr-black) / 0.25);
+                  margin-inline: 4rem;
+                "
+              >
+                Call to action button
+              </p>
 
-              <!-- Basic / blue -->
-              <div class="flow">
-                <p>Basic /blue</p>
-                <!-- Big button begging -->
-                <div id="cta-basic-blue" class="flex">
+              <!-- Big & Small version -->
+              <div class="flex-column justify-content-center">
+                <p>Big</p>
+                <div>
+                  <!-- Big button begging (blue) -->
                   <a
-                    class="flex cta cta-primary fs-600 text-white bg-strong_blue uppercase"
+                    class="flex cta cta-big fs-600 text-white bg-strong_blue uppercase"
                     style="
                       align-items: center;
                       --pad-top_down: 12px;
                       --pad-left_right: 30px;
+                      --cta_margin_custom: auto;
+                      --clr-cta_shadow_custom: var(--clr-red);
                     "
                     href="#"
                   >
                     <span> Découvrez </span>
-                    <span>
-                      <svg
-                        width="66px"
-                        height="43px"
-                        viewBox="0 0 66 43"
-                        version="1.1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                      >
-                        <g
-                          id="arrow"
-                          stroke="none"
-                          stroke-width="1"
-                          fill="none"
-                          fill-rule="evenodd"
-                        >
-                          <path
-                            class="one"
-                            d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
-                            fill="#FFFFFF"
-                          ></path>
-                          <path
-                            class="two"
-                            d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
-                            fill="#FFFFFF"
-                          ></path>
-                          <path
-                            class="three"
-                            d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
-                            fill="#FFFFFF"
-                          ></path>
-                        </g>
-                      </svg>
-                    </span>
+                    <i class="fa-solid fa-chevron-right"></i>
                   </a>
+                  <!-- Big button ending (blue) -->
                 </div>
-                <!-- Big button ending -->
-
-                <!-- Small button begging -->
-                <div class="flex justify-content-center">
+                <p style="margin-top: 1rem">Small</p>
+                <div>
+                  <!-- Small button begging (blue)-->
                   <a
-                    class="flex cta cta-primary fs-400 text-white bg-strong_blue uppercase"
-                    style="
-                      align-items: center;
-                      --pad-top_down: 8px;
-                      --pad-left_right: 25px;
-                    "
-                    href="#"
-                  >
-                    <span> Découvrez </span>
-                    <span>
-                      <svg
-                        width="45px"
-                        height="30px"
-                        viewBox="0 0 66 43"
-                        version="1.1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                      >
-                        <g
-                          id="arrow"
-                          stroke="none"
-                          stroke-width="1"
-                          fill="none"
-                          fill-rule="evenodd"
-                        >
-                          <path
-                            class="one"
-                            d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
-                            fill="#FFFFFF"
-                          ></path>
-                          <path
-                            class="two"
-                            d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
-                            fill="#FFFFFF"
-                          ></path>
-                          <path
-                            class="three"
-                            d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
-                            fill="#FFFFFF"
-                          ></path>
-                        </g>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <!-- Small button ending -->
-              </div>
-              <!-- Basic / blue -->
-
-              <!-- Red -->
-              <div class="flow">
-                <p>Red</p>
-                <!-- Big button begging -->
-                <div class="flex">
-                  <a
-                    class="flex cta cta-secondary fs-600 text-white bg-red uppercase"
+                    class="flex cta cta-small fs-400 text-white bg-red uppercase"
                     style="
                       align-items: center;
                       --pad-top_down: 12px;
                       --pad-left_right: 30px;
+                      --cta_margin_custom: auto;
+                      --clr-cta_shadow_custom: var(--clr-strong_blue);
                     "
                     href="#"
                   >
                     <span> Découvrez </span>
-                    <span>
-                      <svg
-                        width="66px"
-                        height="43px"
-                        viewBox="0 0 66 43"
-                        version="1.1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                      >
-                        <g
-                          id="arrow"
-                          stroke="none"
-                          stroke-width="1"
-                          fill="none"
-                          fill-rule="evenodd"
-                        >
-                          <path
-                            class="one"
-                            d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
-                            fill="#FFFFFF"
-                          ></path>
-                          <path
-                            class="two"
-                            d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
-                            fill="#FFFFFF"
-                          ></path>
-                          <path
-                            class="three"
-                            d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
-                            fill="#FFFFFF"
-                          ></path>
-                        </g>
-                      </svg>
-                    </span>
+                    <i class="fa-solid fa-chevron-right"></i>
                   </a>
+                  <!-- Small button ending (blue)-->
                 </div>
-                <!-- Big button ending -->
-
-                <!-- Small button begging -->
-                <div class="flex justify-content-center">
-                  <a
-                    class="flex cta cta-secondary fs-400 text-white bg-red uppercase"
-                    style="
-                      align-items: center;
-                      --pad-top_down: 8px;
-                      --pad-left_right: 25px;
-                    "
-                    href="#"
-                  >
-                    <span> Découvrez </span>
-                    <span>
-                      <svg
-                        width="45px"
-                        height="30px"
-                        viewBox="0 0 66 43"
-                        version="1.1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                      >
-                        <g
-                          id="arrow"
-                          stroke="none"
-                          stroke-width="1"
-                          fill="none"
-                          fill-rule="evenodd"
-                        >
-                          <path
-                            class="one"
-                            d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
-                            fill="#FFFFFF"
-                          ></path>
-                          <path
-                            class="two"
-                            d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
-                            fill="#FFFFFF"
-                          ></path>
-                          <path
-                            class="three"
-                            d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
-                            fill="#FFFFFF"
-                          ></path>
-                        </g>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <!-- Small button ending -->
               </div>
-              <!-- Red -->
+              <!-- Big & Small version -->
             </div>
             <!-- CALL-TO-ACTION BUTTON ELEMENT -->
 
             <!-- DOTS ELEMENT -->
             <div
               id="tabs"
-              class="container flex-column text-center"
-              style="margin-top: 4rem"
+              class="flex-column text-center"
+              style="margin-top: 4rem; padding: 0"
             >
-              <p class="fw-semi_bold" style="margin-bottom: 1rem">Dots</p>
+              <p
+                class="fw-semi_bold"
+                style="
+                  border-bottom: 2px solid hsl(var(--clr-black) / 0.25);
+                  margin-bottom: 1rem;
+                  margin-inline: 4rem;
+                "
+              >
+                Dots
+              </p>
 
               <!-- Basic / blue -->
               <p>Basic / Blue</p>
@@ -723,234 +577,263 @@
             <!-- DOTS ELEMENT -->
           </div>
 
-          <div>
+          <!-- Colonne 2 -->
+          <div
+            class="flex-column justify-content-center text-center"
+            style="width: 50%; margin-left: 1rem"
+          >
             <!-- TABS ELEMENT -->
             <div
               id="tabs"
-              class="container flex-column text-center"
+              class="flex-column justify-content-center text-center"
               style="margin-top: 4rem"
             >
-              <p class="fw-semi_bold" style="margin-bottom: 1rem">Tabs</p>
+              <div class="flow">
+                <p
+                  class="fw-semi_bold"
+                  style="
+                    border-bottom: 2px solid hsl(var(--clr-black) / 0.25);
+                    margin-inline: 4rem;
+                    margin-bottom: 1rem;
+                  "
+                >
+                  Tabs
+                </p>
 
-              <!-- Basic / blue theme -->
-              <p>Basic / Blue</p>
-              <div
-                style="
-                  border: 1px solid hsl(var(--clr-black) / 0.1);
-                  padding: 1rem;
-                "
-              >
-                <!-- Begining tabs elements (basic color / blue)-->
-                <div class="flex">
-                  <div class="tabs primary">
-                    <button
-                      aria-selected="true"
-                      class="active-tabs uppercase ff-sans_cond letter-spacing-1"
-                    >
-                      Mars
-                    </button>
-                    <button
-                      aria-selected="false"
-                      class="uppercase ff-sans_cond letter-spacing-1"
-                    >
-                      Avril
-                    </button>
-                    <button
-                      aria-selected="false"
-                      class="uppercase ff-sans_cond letter-spacing-1"
-                    >
-                      Mai
-                    </button>
+                <!-- Basic / blue theme -->
+                <p>Basic / Blue</p>
+                <div
+                  style="
+                    border: 1px solid hsl(var(--clr-black) / 0.1);
+                    padding: 1rem;
+                  "
+                >
+                  <!-- Begining tabs elements (basic color / blue)-->
+                  <div class="flex">
+                    <div class="tabs primary">
+                      <button
+                        aria-selected="true"
+                        class="active-tabs uppercase ff-sans_cond letter-spacing-1"
+                      >
+                        Mars
+                      </button>
+                      <button
+                        aria-selected="false"
+                        class="uppercase ff-sans_cond letter-spacing-1"
+                      >
+                        Avril
+                      </button>
+                      <button
+                        aria-selected="false"
+                        class="uppercase ff-sans_cond letter-spacing-1"
+                      >
+                        Mai
+                      </button>
+                    </div>
                   </div>
+                  <!-- Ending tabs elements (basic color / blue) -->
                 </div>
-                <!-- Ending tabs elements (basic color / blue) -->
-              </div>
-              <!-- Basic / blue theme -->
+                <!-- Basic / blue theme -->
 
-              <!-- Red theme -->
-              <p>Red</p>
-              <div
-                style="
-                  border: 1px solid hsl(var(--clr-black) / 0.1);
-                  padding: 1rem;
-                "
-              >
-                <!-- Begining tabs elements (red) -->
-                <div class="flex">
-                  <div class="tabs secondary">
-                    <button
-                      aria-selected="true"
-                      class="active-tabs uppercase ff-sans_cond letter-spacing-1"
-                    >
-                      Mars
-                    </button>
-                    <button
-                      aria-selected="false"
-                      class="uppercase ff-sans_cond letter-spacing-1"
-                    >
-                      Avril
-                    </button>
-                    <button
-                      aria-selected="false"
-                      class="uppercase ff-sans_cond letter-spacing-1"
-                    >
-                      Mai
-                    </button>
+                <!-- Red theme -->
+                <p>Red</p>
+                <div
+                  style="
+                    border: 1px solid hsl(var(--clr-black) / 0.1);
+                    padding: 1rem;
+                  "
+                >
+                  <!-- Begining tabs elements (red) -->
+                  <div class="flex">
+                    <div class="tabs secondary">
+                      <button
+                        aria-selected="true"
+                        class="active-tabs uppercase ff-sans_cond letter-spacing-1"
+                      >
+                        Mars
+                      </button>
+                      <button
+                        aria-selected="false"
+                        class="uppercase ff-sans_cond letter-spacing-1"
+                      >
+                        Avril
+                      </button>
+                      <button
+                        aria-selected="false"
+                        class="uppercase ff-sans_cond letter-spacing-1"
+                      >
+                        Mai
+                      </button>
+                    </div>
                   </div>
+                  <!-- Ending tabs elements (red) -->
                 </div>
-                <!-- Ending tabs elements (red) -->
-              </div>
-              <!-- Red theme -->
+                <!-- Red theme -->
 
-              <!-- Brown theme -->
-              <p>Brown</p>
-              <div
-                style="
-                  border: 1px solid hsl(var(--clr-black) / 0.1);
-                  padding: 1rem;
-                "
-              >
-                <!-- Begining tabs elements (brown) -->
-                <div class="flex">
-                  <div class="tabs tertiary">
-                    <button
-                      aria-selected="true"
-                      class="active-tabs uppercase ff-sans_cond letter-spacing-1"
-                    >
-                      Mars
-                    </button>
-                    <button
-                      aria-selected="false"
-                      class="uppercase ff-sans_cond letter-spacing-1"
-                    >
-                      Avril
-                    </button>
-                    <button
-                      aria-selected="false"
-                      class="uppercase ff-sans_cond letter-spacing-1"
-                    >
-                      Mai
-                    </button>
+                <!-- Brown theme -->
+                <p>Brown</p>
+                <div
+                  style="
+                    border: 1px solid hsl(var(--clr-black) / 0.1);
+                    padding: 1rem;
+                  "
+                >
+                  <!-- Begining tabs elements (brown) -->
+                  <div class="flex">
+                    <div class="tabs tertiary">
+                      <button
+                        aria-selected="true"
+                        class="active-tabs uppercase ff-sans_cond letter-spacing-1"
+                      >
+                        Mars
+                      </button>
+                      <button
+                        aria-selected="false"
+                        class="uppercase ff-sans_cond letter-spacing-1"
+                      >
+                        Avril
+                      </button>
+                      <button
+                        aria-selected="false"
+                        class="uppercase ff-sans_cond letter-spacing-1"
+                      >
+                        Mai
+                      </button>
+                    </div>
                   </div>
+                  <!-- Ending tabs elements (brown) -->
                 </div>
-                <!-- Ending tabs elements (brown) -->
-              </div>
-              <!-- Brown theme -->
+                <!-- Brown theme -->
 
-              <!-- Dark theme -->
-              <p>Dark</p>
-              <div
-                style="
-                  border: 1px solid hsl(var(--clr-black) / 0.1);
-                  padding: 1rem;
-                "
-              >
-                <!-- Begining tabs elements (dark) -->
-                <div class="flex">
-                  <div class="tabs dark">
-                    <button
-                      aria-selected="true"
-                      class="active-tabs uppercase ff-sans_cond letter-spacing-1"
-                    >
-                      Mars
-                    </button>
-                    <button
-                      aria-selected="false"
-                      class="uppercase ff-sans_cond letter-spacing-1"
-                    >
-                      Avril
-                    </button>
-                    <button
-                      aria-selected="false"
-                      class="uppercase ff-sans_cond letter-spacing-1"
-                    >
-                      Mai
-                    </button>
+                <!-- Dark theme -->
+                <p>Dark</p>
+                <div
+                  style="
+                    border: 1px solid hsl(var(--clr-black) / 0.1);
+                    padding: 1rem;
+                  "
+                >
+                  <!-- Begining tabs elements (dark) -->
+                  <div class="flex">
+                    <div class="tabs dark">
+                      <button
+                        aria-selected="true"
+                        class="active-tabs uppercase ff-sans_cond letter-spacing-1"
+                      >
+                        Mars
+                      </button>
+                      <button
+                        aria-selected="false"
+                        class="uppercase ff-sans_cond letter-spacing-1"
+                      >
+                        Avril
+                      </button>
+                      <button
+                        aria-selected="false"
+                        class="uppercase ff-sans_cond letter-spacing-1"
+                      >
+                        Mai
+                      </button>
+                    </div>
                   </div>
+                  <!-- Ending tabs elements (dark) -->
                 </div>
-                <!-- Ending tabs elements (dark) -->
-              </div>
-              <!-- Dark theme -->
+                <!-- Dark theme -->
 
-              <!-- Light theme -->
-              <p>Light</p>
-              <div
-                style="background-color: hsl(var(--clr-black)); padding: 1rem"
-              >
-                <!-- Begining tabs elements (light) -->
-                <div class="flex">
-                  <div class="tabs light">
-                    <button
-                      aria-selected="true"
-                      class="active-tabs uppercase ff-sans_cond letter-spacing-1"
-                    >
-                      Mars
-                    </button>
-                    <button
-                      aria-selected="false"
-                      class="uppercase ff-sans_cond letter-spacing-1"
-                    >
-                      Avril
-                    </button>
-                    <button
-                      aria-selected="false"
-                      class="uppercase ff-sans_cond letter-spacing-1"
-                    >
-                      Mai
-                    </button>
+                <!-- Light theme -->
+                <p>Light</p>
+                <div
+                  style="background-color: hsl(var(--clr-black)); padding: 1rem"
+                >
+                  <!-- Begining tabs elements (light) -->
+                  <div class="flex">
+                    <div class="tabs light">
+                      <button
+                        aria-selected="true"
+                        class="active-tabs uppercase ff-sans_cond letter-spacing-1"
+                      >
+                        Mars
+                      </button>
+                      <button
+                        aria-selected="false"
+                        class="uppercase ff-sans_cond letter-spacing-1"
+                      >
+                        Avril
+                      </button>
+                      <button
+                        aria-selected="false"
+                        class="uppercase ff-sans_cond letter-spacing-1"
+                      >
+                        Mai
+                      </button>
+                    </div>
                   </div>
+                  <!-- Ending tabs elements (light) -->
                 </div>
-                <!-- Ending tabs elements (light) -->
+                <!-- Light theme -->
               </div>
-              <!-- Light theme -->
             </div>
             <!-- TABS ELEMENT -->
 
             <!-- LIST ELEMENT -->
             <div
               id="list"
-              class="container flex-column"
+              class="flex-column"
               style="margin-top: 4rem; padding: 0"
             >
-              <p class="fw-semi_bold text-center" style="margin-bottom: 1rem">
+              <p
+                class="fw-semi_bold text-center"
+                style="
+                  border-bottom: 2px solid hsl(var(--clr-black) / 0.25);
+                  margin-inline: 4rem;
+                  margin-bottom: 1rem;
+                "
+              >
                 List
               </p>
 
-              <!-- Begining list elements-->
-              <div class="flex">
-                <ul
-                  class="list"
-                  style="
-                    --clr-list_current_custom: var(--clr-black);
-                    --clr-list_span_custom: var(--clr-strong_blue);
-                    --clr-list_hover_custom: var(--clr-red);
-                    --clr-list_shadow_hover_custom: var(--clr-strong_blue);
-                    --fw-list_span_custom: 600;
-                  "
-                >
-                  <li class="uppercase ff-primary">
-                    <a href="#">
-                      <span><i class="fa-solid fa-circle"></i> Juin 2022</span>
-                      - début de la Promotion
-                    </a>
-                  </li>
-                  <li class="uppercase ff-primary">
-                    <a href="#">
-                      <span
-                        ><i class="fa-solid fa-circle"></i> Septembre 2022</span
-                      >
-                      - financement ulule
-                    </a>
-                  </li>
-                  <li class="uppercase ff-primary">
-                    <a href="#"
-                      ><span><i class="fa-solid fa-circle"></i> juin 2023</span>
-                      - lancement du site
-                    </a>
-                  </li>
-                </ul>
+              <div style="margin: auto">
+                <!-- Begining list elements -->
+                <div class="flex">
+                  <ul
+                    class="list"
+                    style="
+                      --clr-list_current_custom: var(--clr-black);
+                      --clr-list_span_custom: var(--clr-strong_blue);
+                      --clr-list_hover_custom: var(--clr-red);
+                      --clr-list_shadow_hover_custom: var(--clr-strong_blue);
+                      --fw-list_span_custom: 600;
+                    "
+                  >
+                    <li class="uppercase ff-primary">
+                      <a href="#">
+                        <span
+                          ><i class="fa-solid fa-circle"></i> Juin 2022</span
+                        >
+                        - début de la Promotion
+                      </a>
+                    </li>
+                    <li class="uppercase ff-primary">
+                      <a href="#">
+                        <span
+                          ><i class="fa-solid fa-circle"></i> Septembre
+                          2022</span
+                        >
+                        - financement ulule
+                      </a>
+                    </li>
+                    <li class="uppercase ff-primary">
+                      <a href="#"
+                        ><span
+                          ><i class="fa-solid fa-circle"></i> juin 2023</span
+                        >
+                        - lancement du site
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Ending list elements -->
               </div>
-              <!-- Ending list elements (basic color / blue) -->
             </div>
             <!-- LIST ELEMENT -->
           </div>

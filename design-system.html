@@ -311,42 +311,44 @@
                 border-style: solid;
               "
             >
-              <i class="fa-solid fa-bars text-center title-hover-effect"></i>
-              <div class="nav">
-                <div class="nav-content">
-                  <ul
-                    class="nav-list flex-column justify-content-center bg-strong_blue text-center"
+              <i
+                class="fa-solid fa-bars text-center title-hover-effect"
+                onclick="openNav()"
+              ></i>
+
+              <div id="nav-menu" class="overlay bg-strong_blue">
+                <a
+                  href="javascript:void(0)"
+                  class="menu-btn menu-closebtn uppercase text-white fs-800 letter-spacing-2 title-hover-effect text-center"
+                  onclick="closeNav()"
+                  >&times;</a
+                >
+                <nav class="overlay-content">
+                  <a
+                    href="#"
+                    class="menu-btn uppercase text-white fs-700 letter-spacing-1 title-hover-effect"
+                    onclick="closeNav()"
+                    >Acceuil</a
                   >
-                    <li>
-                      <a
-                        href="#"
-                        class="uppercase text-white fs-700 letter-spacing-2 title-hover-effect"
-                        >Acceuil</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="uppercase text-white fs-700 letter-spacing-2 title-hover-effect"
-                        >Le projet</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="uppercase text-white fs-700 letter-spacing-2 title-hover-effect"
-                        >Les créateurs</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="uppercase text-white fs-700 letter-spacing-2 title-hover-effect"
-                        >Contact</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+                  <a
+                    href="#"
+                    class="menu-btn uppercase text-white fs-700 letter-spacing-1 title-hover-effect"
+                    onclick="closeNav()"
+                    >Le projet</a
+                  >
+                  <a
+                    href="#"
+                    class="menu-btn uppercase text-white fs-700 letter-spacing-1 title-hover-effect"
+                    onclick="closeNav()"
+                    >L'équipe</a
+                  >
+                  <a
+                    href="#"
+                    class="menu-btn uppercase text-white fs-700 letter-spacing-1 title-hover-effect"
+                    onclick="closeNav()"
+                    >Contact</a
+                  >
+                </nav>
               </div>
             </nav>
           </div>
@@ -792,7 +794,7 @@
                 List
               </p>
 
-              <div style="margin: auto">
+              <div style="padding-left: 7.5rem">
                 <!-- Begining list elements -->
                 <div class="flex">
                   <ul
@@ -842,5 +844,14 @@
     </div>
 
     <script src="index.pack.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById('nav-menu').style.height = '100%';
+      }
+
+      function closeNav() {
+        document.getElementById('nav-menu').style.height = '0%';
+      }
+    </script>
   </body>
 </html>
